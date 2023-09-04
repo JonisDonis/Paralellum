@@ -1,0 +1,68 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* Centrerar barn horisontellt */
+  align-items: center;
+  /* Centrerar barn vertikalt */
+  height: 100vh;
+  /* Tar upp hela skärmens höjd */
+  width: 100%;
+  /* Tar upp hela skärmens bredd */
+  position: absolute;
+  /* Absolut positionering gör att denna div kan ligga ovanpå andra innehåll */
+  top: 0;
+  left: 0;
+  z-index: 2;
+  /* Säkerställer att denna div ligger ovanpå andra med lägre z-index */
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 10vw;
+  color: rgb(255, 255, 255);
+  text-shadow:
+    0 0 25px rgba(169, 242, 255, 0.404),
+    0 0 10px rgba(169, 242, 255, 0.11);
+  /* 0 0 3px rgb(0, 0, 0); */
+
+  mix-blend-mode: color-dodge;
+}
+
+.background {
+  width: 110%;
+  height: 110%;
+  background-image: url('img/SciFiHab1.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  filter: blur(5px);
+  top: -5%;
+  /* Offset to start from the center */
+  left: -5%;
+  /* Offset to start from the center */
+}
+
+.particles {
+  width: 120%;
+  height: 120%;
+  background-image: url('img/particles.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  /* filter: blur(2px); */
+  top: -10%;
+  /* Offset to start from the center */
+  left: -10%;
+  /* Offset to start from the center */
+  opacity: 0.5;
+  /* Just an example, you can adjust the opacity as needed */
+}
